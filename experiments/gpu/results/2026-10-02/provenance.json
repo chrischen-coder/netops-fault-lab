@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-02",
+  "driver_versions": [
+    "580.95.05"
+  ],
+  "script_sha256": {
+    "download_model.py": "20399f70f75de2e304a49b39612f3615d700a4df5a94e2072c14a2dfa82da686",
+    "check_distributed.py": "d02df730627850d324b51f80289773e396db67424ee0692c988a930be9f8e66b",
+    "vlm_smoke.py": "cfd90dc06e257568e38784cd1e891fb8f6d70727627b33c423d8a18897884a32",
+    "model-manifest.json": "9bd39690d09ea46cc1d59d3c3d8edc4fe1159ee6482e6784a6b822ce25691c9a"
+  },
+  "model_download_source": "https://modelscope.cn/models/Qwen/Qwen3-VL-2B-Instruct",
+  "scope": "Eight-GPU DDP environment check and one-GPU VLM training smoke test; no accuracy benchmark",
+  "command_nccl_environment_overrides": {}
+}

@@ -1,0 +1,143 @@
+{
+  "purpose": "environment validation, not a training throughput benchmark",
+  "python": "3.12.14",
+  "torch": "2.8.0+cu128",
+  "cuda_runtime": "12.8",
+  "nccl": [
+    2,
+    27,
+    3
+  ],
+  "world_size": 8,
+  "architecture_builds": [
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "gpus": [
+    {
+      "rank": 0,
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "memory_gib": 31.357,
+      "capability": [
+        12,
+        0
+      ],
+      "bf16_backward_finite": true,
+      "all_reduce_sum": 36.0,
+      "ddp_loss": 1.0761702060699463,
+      "max_weight_change": 0.009663090109825134,
+      "max_cross_rank_weight_difference": 0.0,
+      "peak_allocated_mib": 16.81
+    },
+    {
+      "rank": 1,
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "memory_gib": 31.357,
+      "capability": [
+        12,
+        0
+      ],
+      "bf16_backward_finite": true,
+      "all_reduce_sum": 36.0,
+      "ddp_loss": 1.2658064365386963,
+      "max_weight_change": 0.009663090109825134,
+      "max_cross_rank_weight_difference": 0.0,
+      "peak_allocated_mib": 16.81
+    },
+    {
+      "rank": 2,
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "memory_gib": 31.357,
+      "capability": [
+        12,
+        0
+      ],
+      "bf16_backward_finite": true,
+      "all_reduce_sum": 36.0,
+      "ddp_loss": 1.4866926670074463,
+      "max_weight_change": 0.009663090109825134,
+      "max_cross_rank_weight_difference": 0.0,
+      "peak_allocated_mib": 16.81
+    },
+    {
+      "rank": 3,
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "memory_gib": 31.357,
+      "capability": [
+        12,
+        0
+      ],
+      "bf16_backward_finite": true,
+      "all_reduce_sum": 36.0,
+      "ddp_loss": 1.7388288974761963,
+      "max_weight_change": 0.009663090109825134,
+      "max_cross_rank_weight_difference": 0.0,
+      "peak_allocated_mib": 16.81
+    },
+    {
+      "rank": 4,
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "memory_gib": 31.357,
+      "capability": [
+        12,
+        0
+      ],
+      "bf16_backward_finite": true,
+      "all_reduce_sum": 36.0,
+      "ddp_loss": 2.0222151279449463,
+      "max_weight_change": 0.009663090109825134,
+      "max_cross_rank_weight_difference": 0.0,
+      "peak_allocated_mib": 16.81
+    },
+    {
+      "rank": 5,
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "memory_gib": 31.357,
+      "capability": [
+        12,
+        0
+      ],
+      "bf16_backward_finite": true,
+      "all_reduce_sum": 36.0,
+      "ddp_loss": 2.3368513584136963,
+      "max_weight_change": 0.009663090109825134,
+      "max_cross_rank_weight_difference": 0.0,
+      "peak_allocated_mib": 16.81
+    },
+    {
+      "rank": 6,
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "memory_gib": 31.357,
+      "capability": [
+        12,
+        0
+      ],
+      "bf16_backward_finite": true,
+      "all_reduce_sum": 36.0,
+      "ddp_loss": 2.6827375888824463,
+      "max_weight_change": 0.009663090109825134,
+      "max_cross_rank_weight_difference": 0.0,
+      "peak_allocated_mib": 16.81
+    },
+    {
+      "rank": 7,
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "memory_gib": 31.357,
+      "capability": [
+        12,
+        0
+      ],
+      "bf16_backward_finite": true,
+      "all_reduce_sum": 36.0,
+      "ddp_loss": 3.0598738193511963,
+      "max_weight_change": 0.009663090109825134,
+      "max_cross_rank_weight_difference": 0.0,
+      "peak_allocated_mib": 16.81
+    }
+  ]
+}

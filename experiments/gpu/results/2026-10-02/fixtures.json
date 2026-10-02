@@ -1,0 +1,10 @@
+[
+  {
+    "question": "Which two nodes are connected by the link labeled core? Reply only with the two node names, separated by a comma.",
+    "answer": "r1, r2"
+  },
+  {
+    "question": "Which two nodes are connected by the link labeled database? Reply only with the two node names, separated by a comma.",
+    "answer": "r2, db"
+  }
+]

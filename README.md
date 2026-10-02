@@ -129,7 +129,11 @@ ranking is not proof of the physical root cause.
 
 This release is an offline algorithm and experiment tool. Next: controlled
 network measurements, correlated-noise and multiple-fault models. The planned
-log-text and topology-image experiments are not implemented. [Roadmap](docs/roadmap.zh-CN.md).
+log-text and topology-image accuracy experiments are not implemented. [Roadmap](docs/roadmap.zh-CN.md).
+
+The optional [GPU setup and smoke checks](experiments/gpu/README.md) have been run
+on eight RTX 5090 GPUs: DDP synchronization, local Qwen3-VL image inference and
+single-GPU LoRA updates. These checks validate the environment, not diagnosis accuracy.
 
 [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md) · [Software citation](CITATION.cff)
 

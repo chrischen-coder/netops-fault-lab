@@ -119,6 +119,9 @@ python -m unittest discover -s tests -v
 首版完成的是离线算法与实验工具。后续优先接入可控网络实验和真实探测，再验证相关噪声、多故障模型；
 [分阶段计划](docs/roadmap.zh-CN.md)。
 
+[GPU 环境与训练自检](experiments/gpu/README.zh-CN.md)已在 8 张 RTX 5090 上验证：
+DDP 梯度同步、Qwen3-VL 图文推理和单卡 LoRA 更新均已跑通。这是环境验证，尚未进行大模型故障定位评测。
+
 [贡献指南](CONTRIBUTING.md) · [版本记录](CHANGELOG.md) · [软件引用](CITATION.cff)
 
 MIT 许可证。示例和实验数据均自行生成。

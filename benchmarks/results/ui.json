@@ -1,0 +1,12 @@
+{
+  "browser": "154.0.8037.97",
+  "viewports": [
+    "1200x1160",
+    "390x844"
+  ],
+  "externalRequests": 0,
+  "pageErrors": [],
+  "mobileOverflow": false,
+  "beforeAndAfterStates": "passed",
+  "nativeDetails": "passed"
+}

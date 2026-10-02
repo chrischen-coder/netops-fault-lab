@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "hit_failure_probability": 0.9112903225806451,
+  "background_failure_probability": 0.03141025641025641,
+  "healthy_prior": 0.12758620689655173,
+  "provenance": {
+    "source": "Beta(1,1) fit on labeled training data",
+    "cases": 288,
+    "topologies": 24,
+    "training_topology_ids": [
+      "039a561989d120098d9eb55f1cd543bf",
+      "1013e6c3df3e557f7ab73a2211045e58",
+      "173259ca548b92c94cb777daed7d75f8",
+      "20fca61209e50f67ce4e269aed242154",
+      "37c677ec46b573244df3c05ce34a48f8",
+      "459e92cd591a73d3c2369e901c4aa289",
+      "4731cbc7a10d68dbf1b67de48e7dba8c",
+      "48c589d1cc6a9d797398d49433fa7c0c",
+      "56384b0e7801f08069c92f45265558e9",
+      "581d87e3cabe14048d51a5c509a1e910",
+      "6243590cf18ac09ae0deff450f1a288e",
+      "6b605ba3a8b1c21258ad16a81dc07fd2",
+      "71e92a05ee20f8c0115ef60fd84c8e44",
+      "74777b728785a8153337d2009830526c",
+      "8cd3a702d9aa3667d7c7a36f7451b3ed",
+      "9dcd302c5e9e6c2197b3582e883ee86b",
+      "a1e13b7b4be8e266a4cf22c7763efb53",
+      "a83833a011369a8e8d536edb896f3003",
+      "af20b42365f0606cbdbd2c457736b939",
+      "b876a5392c9b148c48a2bf0702afcfcb",
+      "bc16eecf7d590dc766fae61b61b44b70",
+      "ca216b28d023725b4816ded6531e2da7",
+      "eff0807335aaee6290e89d2ebae38828",
+      "fb619c5a79228a271b7f9f552616a68e"
+    ],
+    "counts": {
+      "hit_fail": 451,
+      "hit_total": 494,
+      "background_fail": 97,
+      "background_total": 3118
+    },
+    "training_uncompressed_sha256": "09bf810f5c846147d48e2a986ceebc4cc8358384e53db8e4bbfead831ed7d3f6"
+  }
+}

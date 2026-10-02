@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "after-core-probe",
+  "topology_id": "demo-branch",
+  "links": [
+    {
+      "id": "access",
+      "source": "api",
+      "target": "r1"
+    },
+    {
+      "id": "core",
+      "source": "r1",
+      "target": "r2"
+    },
+    {
+      "id": "database",
+      "source": "r2",
+      "target": "db"
+    },
+    {
+      "id": "cache",
+      "source": "r1",
+      "target": "cache"
+    },
+    {
+      "id": "monitor",
+      "source": "monitor",
+      "target": "r1"
+    }
+  ],
+  "observations": [
+    {
+      "id": "api-db",
+      "path": [
+        "api",
+        "r1",
+        "r2",
+        "db"
+      ],
+      "outcome": "fail"
+    },
+    {
+      "id": "monitor-db",
+      "path": [
+        "monitor",
+        "r1",
+        "r2",
+        "db"
+      ],
+      "outcome": "fail"
+    },
+    {
+      "id": "api-cache",
+      "path": [
+        "api",
+        "r1",
+        "cache"
+      ],
+      "outcome": "pass"
+    },
+    {
+      "id": "monitor-cache",
+      "path": [
+        "monitor",
+        "r1",
+        "cache"
+      ],
+      "outcome": "pass"
+    },
+    {
+      "id": "probe-core",
+      "path": [
+        "r1",
+        "r2"
+      ],
+      "outcome": "fail"
+    }
+  ],
+  "available_probes": [
+    {
+      "id": "probe-database",
+      "path": [
+        "r2",
+        "db"
+      ],
+      "cost": 2
+    },
+    {
+      "id": "probe-access",
+      "path": [
+        "api",
+        "r1"
+      ],
+      "cost": 1
+    }
+  ]
+}

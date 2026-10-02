@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "tool_version": "0.1.0",
+  "case_id": "after-core-probe",
+  "topology_id": "demo-branch",
+  "status": "candidate",
+  "decision_threshold": 0.9,
+  "model": {
+    "schema_version": 1,
+    "hit_failure_probability": 0.9,
+    "background_failure_probability": 0.03,
+    "healthy_prior": 0.15,
+    "provenance": {
+      "source": "illustrative defaults; not calibrated"
+    }
+  },
+  "observed_probes": 5,
+  "missing_probes": 0,
+  "entropy_bits": 0.20929935709249622,
+  "ranking": [
+    {
+      "hypothesis": "core",
+      "probability": 0.9674964705993522
+    },
+    {
+      "hypothesis": "database",
+      "probability": 0.032249882353311735
+    },
+    {
+      "hypothesis": "access",
+      "probability": 0.00011082433798388913
+    },
+    {
+      "hypothesis": "monitor",
+      "probability": 0.00011082433798388913
+    },
+    {
+      "hypothesis": "__healthy__",
+      "probability": 3.161753171893301e-05
+    },
+    {
+      "hypothesis": "cache",
+      "probability": 3.8083964942917054e-07
+    }
+  ],
+  "indistinguishable_from_top": [
+    "core"
+  ],
+  "equivalent_group_probability": 0.9674964705993522,
+  "next_probes": [
+    {
+      "id": "probe-database",
+      "path": [
+        "r2",
+        "db"
+      ],
+      "expected_gain_bits": 0.11643695683102082,
+      "cost": 2.0,
+      "gain_per_cost": 0.05821847841551041,
+      "predicted_failure_probability": 0.058057397647381215
+    },
+    {
+      "id": "probe-access",
+      "path": [
+        "api",
+        "r1"
+      ],
+      "expected_gain_bits": 0.0004528643602164928,
+      "cost": 1.0,
+      "gain_per_cost": 0.0004528643602164928,
+      "predicted_failure_probability": 0.030096417174045986
+    }
+  ],
+  "evidence_comparison": {
+    "top": "core",
+    "runner_up": "database",
+    "probes": [
+      {
+        "id": "api-db",
+        "outcome": "fail",
+        "path": [
+          "api",
+          "r1",
+          "r2",
+          "db"
+        ],
+        "supports_top_vs_runner_up_log_bayes_factor": 0.0
+      },
+      {
+        "id": "monitor-db",
+        "outcome": "fail",
+        "path": [
+          "monitor",
+          "r1",
+          "r2",
+          "db"
+        ],
+        "supports_top_vs_runner_up_log_bayes_factor": 0.0
+      },
+      {
+        "id": "api-cache",
+        "outcome": "pass",
+        "path": [
+          "api",
+          "r1",
+          "cache"
+        ],
+        "supports_top_vs_runner_up_log_bayes_factor": 0.0
+      },
+      {
+        "id": "monitor-cache",
+        "outcome": "pass",
+        "path": [
+          "monitor",
+          "r1",
+          "cache"
+        ],
+        "supports_top_vs_runner_up_log_bayes_factor": 0.0
+      },
+      {
+        "id": "probe-core",
+        "outcome": "fail",
+        "path": [
+          "r1",
+          "r2"
+        ],
+        "supports_top_vs_runner_up_log_bayes_factor": 3.4011973816621555
+      }
+    ]
+  },
+  "assumptions": [
+    "At most one failed link, or healthy",
+    "Known, unchanged, undirected probe paths",
+    "Conditionally independent probe outcomes with shared noise rates",
+    "Probabilities depend on this model; a ranking is not a verified root cause"
+  ]
+}

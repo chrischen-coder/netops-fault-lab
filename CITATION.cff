@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, cite the repository version and describe the synthetic-data scope."
+title: "NetOps Fault Lab"
+type: software
+authors:
+  - family-names: "chrischen-coder"
+version: 0.1.0
+date-released: 2026-10-02
+url: "https://github.com/chrischen-coder/netops-fault-lab"
+license: MIT

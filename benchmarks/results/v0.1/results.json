@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "tool_version": "0.1.0",
+  "synthetic": true,
+  "parameters": {
+    "seeds": [
+      7,
+      17,
+      29
+    ],
+    "train_topologies": 24,
+    "test_topologies": 24,
+    "cases_per_topology": 12,
+    "healthy_probability": 0.15,
+    "scenarios": {
+      "nominal": {
+        "hit": 0.9,
+        "background": 0.03,
+        "missing": 0.1,
+        "copies": 1
+      },
+      "noise_shift": {
+        "hit": 0.65,
+        "background": 0.15,
+        "missing": 0.1,
+        "copies": 1
+      },
+      "missing_55pct": {
+        "hit": 0.9,
+        "background": 0.03,
+        "missing": 0.55,
+        "copies": 1
+      },
+      "copied_alarms_x4": {
+        "hit": 0.9,
+        "background": 0.03,
+        "missing": 0.1,
+        "copies": 4
+      }
+    },
+    "threshold": 0.9
+  },
+  "environment": {
+    "python": "3.12.12",
+    "system": "Darwin",
+    "machine": "arm64",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "networkx": "3.7"
+  },
+  "manifest": [
+    {
+      "seed": 7,
+      "train_sha256": "09bf810f5c846147d48e2a986ceebc4cc8358384e53db8e4bbfead831ed7d3f6",
+      "train_topology_ids": [
+        "48c589d1cc6a9d797398d49433fa7c0c",
+        "a1e13b7b4be8e266a4cf22c7763efb53",
+        "af20b42365f0606cbdbd2c457736b939",
+        "8cd3a702d9aa3667d7c7a36f7451b3ed",
+        "a83833a011369a8e8d536edb896f3003",
+        "039a561989d120098d9eb55f1cd543bf",
+        "6243590cf18ac09ae0deff450f1a288e",
+        "6b605ba3a8b1c21258ad16a81dc07fd2",
+        "9dcd302c5e9e6c2197b3582e883ee86b",
+        "b876a5392c9b148c48a2bf0702afcfcb",
+        "71e92a05ee20f8c0115ef60fd84c8e44",
+        "459e92cd591a73d3c2369e901c4aa289",
+        "fb619c5a79228a271b7f9f552616a68e",
+        "56384b0e7801f08069c92f45265558e9",
+        "ca216b28d023725b4816ded6531e2da7",
+        "20fca61209e50f67ce4e269aed242154",
+        "74777b728785a8153337d2009830526c",
+        "37c677ec46b573244df3c05ce34a48f8",
+        "1013e6c3df3e557f7ab73a2211045e58",
+        "eff0807335aaee6290e89d2ebae38828",
+        "173259ca548b92c94cb777daed7d75f8",
+        "4731cbc7a10d68dbf1b67de48e7dba8c",
+        "bc16eecf7d590dc766fae61b61b44b70",
+        "581d87e3cabe14048d51a5c509a1e910"
+      ],
+      "test_topology_ids": [
+        "310a198f5a248efa748789e402cfead5",
+        "68918afa182f8a90b2977ba476cef5e2",
+        "70cfe5ad3408d31b3f035acad1c158c7",
+        "5bf1d7c4a95319909f66205c1207d38a",
+        "5f544c8833fcf305ff811ec05d6c5331",
+        "e00678c0eaa89aee4298afb76b093c20",
+        "558fee17cd4253cf2f99ccea43a61280",
+        "685631b7a2a69085b21f58b3ef5c6342",
+        "e59edfabd316c45982f8c0f4369243d7",
+        "5232b90dda9242eb9a5c6097d5204d6f",
+        "5fcc80649738bc6ebb5e6ed34bbe4c7e",
+        "6e8701ec4a17b2b7edc4615747cc5c1f",
+        "1635725a719b7f9ec7d8e77a981e8ecd",
+        "38d45072b3db4bbfe7d2bab536da1eee",
+        "0910b8fa94bec81eab184511b3cbe011",
+        "9aa0868ad4dae8c862aa32bf01849b2f",
+        "921a105796c51cf86736d46ce4e25dbd",
+        "2e8c69af1fbf37d7307e047f03e532ad",
+        "2e7001dcd306499fb6e11ddc4eac9068",
+        "3f42f8e50ca63c578f3eaafe5d40aca0",
+        "8bdbf95439da37765698d5c3ff3dcb26",
+        "d880151cfdcfc57ee556884a346a18e4",
+        "1d73021b7a9fdaf1e81e139612804d39",
+        "c1d6f523d2aa51ed9582ef18f00b18ea"
+      ],
+      "test_sha256": {
+        "nominal": "d9854771f93770821212b680f507fbd655aa4d5f2079a09468174a5f71238625",
+        "noise_shift": "9e00582e19932182118524edcfcc6a208dcb32eb4257d250803a0cdb58a0605d",
+        "missing_55pct": "0fda0e399ec2656ae43fc7bb17e326cb78c4967c9da7a6063aad1e8a2ae27a0f",
+        "copied_alarms_x4": "abefb66786f43d5b19393bd46ead1b504fe7603dbb87b15641b081c568b21ece"
+      }
+    },
+    {
+      "seed": 17,
+      "train_sha256": "03e8fa31a8a5983023c1e10bf8f43337455ec0a66c1945ef60771c393c6215f7",
+      "train_topology_ids": [
+        "d8b51edfda0562f45d7dd54dc503c614",
+        "916951ec1f58fad5b8760631ddf3c681",
+        "70e24ecfe6656ba9f5d4c050e146d319",
+        "b018c085543c0deddaebe24d684bcca7",
+        "06876827840316a8b44b56bc6f1f95c7",
+        "684496c5d96cd085299a317f337f4dc9",
+        "9445dd1e579705aba382ce636b02fdad",
+        "2111337303ee52ab6b3e6c72b11a143c",
+        "7d87ab252b766d636f31b71e7e65cc9f",
+        "44d016bd0683c3e9b58badb1d99957df",
+        "b238c6f32890b771f71ffb0a011a38ba",
+        "aedad22166949a755bc3bcd039e4df4d",
+        "1b21adfa883522a4af66d630357ee80a",
+        "ef18336585a9224066a0854f6a7811d1",
+        "9b41861950fe197aa15ad5f6c24a3f0d",
+        "ecdec21d777c43ef7c251a7d3b8f01b7",
+        "11eb28eb302d7ecf355a21ca31ca0e51",
+        "e6578d91a72b629fb0a5dd81faac9eba",
+        "367b291d412623906781fd7854713e64",
+        "065453b5128d5b6091a2eabfb9263cb8",
+        "1cc206ed9256eabbfc5c6983947ec53b",
+        "fbe54a77c8608f89d54dccb1574f4623",
+        "e7b614e070c61a3d4ff0842c161b1b9d",
+        "8634243e3f6c2400f3661bd4e9e75477"
+      ],
+      "test_topology_ids": [
+        "07dadab14d09bc68b582c4b510e17ca7",
+        "bbd4ddf72e4d1c519768c7689ca74c32",
+        "46bf70355529a2d4f91cfc54f18a9f03",
+        "ce5e5cbee2eeb9ebee20bf6b8ffe6563",
+        "ab54bd9139a28ac2e6f9707b49dc6474",
+        "c91d311fe0410074d9411d5fdbb84c84",
+        "2c553749d31eb5b970727a5348e873c8",
+        "b55cd15ab497572b7c37ab1560f5b93f",
+        "9b7765d167ab4261e1f93b8cd1b704ff",
+        "2fd26fefd64fb45dd98e35a094c398ed",
+        "f98aa1f1742916a351fbece35ce23de7",
+        "81534097dd29a61356659583ffd164ca",
+        "1b8d6649e5b2d2cbc97652c70c0a6939",
+        "29a635255be498e0b402ec24e0ca620e",
+        "e2b4517f3d2eb12f740221065b2eb370",
+        "51b1e4034db0985a89d528307014c0bf",
+        "3cc187b42aa3d9e6cdae3ea983ce0ef3",
+        "3fbdf7478046b80daf36744e850918a3",
+        "e205530705629a97f647a937999210c5",
+        "e54b8dcb91b6aed7beb4fd8cea5a719b",
+        "f0fc85eb261e7d7ba5d692d4bd80b458",
+        "9ea6312292088bd88c84dee6d4bc5c41",
+        "bd580b1b77ee194fb277614af5f36968",
+        "6d8311c78ea56d9c8aa5468b0afd24a9"
+      ],
+      "test_sha256": {
+        "nominal": "b41a9660a27b8dd38dee4591335295e0a13b8d93650d936abddcc95caac3161c",
+        "noise_shift": "ee6aa6c75a13497151ceb48f98342f3223922fd24057972a73afa177551ce4df",
+        "missing_55pct": "b4aecd42673a7c0c20c952dfc3164ecc6678a1e81689e9b162759e179125ed9d",
+        "copied_alarms_x4": "0216134096c1bfe28c09ed43253be36a106eacb9c3d9c17f2ef58e20a7738e42"
+      }
+    },
+    {
+      "seed": 29,
+      "train_sha256": "90b920a21f68aa1d43a7a223a9cc4ecdb1a51f0b647c55023535b8e7e6cb699a",
+      "train_topology_ids": [
+        "908d2437ec24eb311c70b7b14cb12495",
+        "df4ecb6ebc48c9049ce6597f2a05ee78",
+        "20f8091fd7c9062b0667c97d8189f7cc",
+        "dc6bb34623cca0440226356c4602c3cc",
+        "be97def7d3d9fdd26055817bb28a02aa",
+        "a653bf4ae13dff24b4aa2c23cb3a7ee5",
+        "e19e29db0fe4c8c15d95d09fbb52bfe2",
+        "5c173ec065960452d8eeac06514a52c9",
+        "23c0c14410fca082d46ede8b9f53311b",
+        "246eac14d761bf9938ae490b90b8675f",
+        "2d110e301c2d1f39c0aed01790885e0f",
+        "3ae2ff1e4b5dd76c08eea75d06a1f54d",
+        "f2a73eb43306471fb55f03e0d38ae75b",
+        "8703c2ff45a100e9e470641af1509dea",
+        "fd286fdf58f5a78e693a1744c0135a00",
+        "04c6b676e76914adca1fa94e64fde2cd",
+        "84424808dcad64a2e45185df05e5abe6",
+        "69e6f197f8dc3dcaf304d7aa6841bc74",
+        "5fec9e2674bdd889a8469a731783bc8c",
+        "e7b9f3243e4a49c0e341b9af8ad6c763",
+        "54050d03d134090b9a1a81382a77410e",
+        "60331c299ac1295a12251cf03501828a",
+        "a7090f16ca2212756cfab449c88e6ec6",
+        "e8b812b41fd676ad7003fcea379fce8d"
+      ],
+      "test_topology_ids": [
+        "c835fa1e3e69cb531a622e34cffeb2bc",
+        "40e09120f0157ca91709257cdc7df22e",
+        "03e50083ea851ab2baae7d1cfef75238",
+        "2285c8c3b79d7ff02ba0dadb13c19c7a",
+        "0d3d3177421168a24112e13f06be9c77",
+        "e9f1860fe8e8466c092360b0f096ce27",
+        "eb15edb8c62a788b2a8feb1a90e127b8",
+        "eb625d7e082f18a03203e0facd07f17d",
+        "5fcc80649738bc6ebb5e6ed34bbe4c7e",
+        "5deda92c3cbd8f65c013d0d730dbbbd0",
+        "c61a0d4b910f33eacd0e54577c8e3b8d",
+        "b7f2a3d8770846fd764658bf349faf0b",
+        "3f732ba937b683ddc3f19b4c475d9410",
+        "0fdde2bdfa6976d3567ac95643824ce1",
+        "188631690840c54b09a6f582a0e92183",
+        "03b745a9abd0fb593c49e86bf941d817",
+        "78b1ba311ce6213d1d5d589bf7a6ef20",
+        "079a46f6f9017cc69fbdca9bbb9f3f00",
+        "5a0ccad0815ce01e06755191987c30d8",
+        "2668606099969a676ff78da82d194091",
+        "c00f1f6db63387ae0b57056977a3ad36",
+        "59bc602a49e75ff239c45ffb3ef11d3b",
+        "1cf3d8e961c328729a7346c2b1febd78",
+        "09993dff1a21a27bfc5ff348c3ff211d"
+      ],
+      "test_sha256": {
+        "nominal": "8231af9df6473dab29f16139b6a839b930cb8f2c5874d3b010680596c127a32f",
+        "noise_shift": "cfd0cdd550d616f9140426af21aacefd0742123debe49c1cbf8532002463bf5a",
+        "missing_55pct": "6e7d2a78429ee4ab10ebd0d472f432ebec53012c2363e806327908b4749108ff",
+        "copied_alarms_x4": "aeadf4709e8b7c1cb2f7bbee627eefa8e6d93c6af8a35e3f86391e0d9e92306d"
+      }
+    }
+  ],
+  "summary": {
+    "nominal": {
+      "failed_path_votes": {
+        "cases": 864,
+        "top1": 0.5659722222222222,
+        "top3": 0.7719907407407407,
+        "mrr": 0.6890309218939464,
+        "top1_topology_bootstrap_95pct": [
+          0.5277777777777778,
+          0.6018518518518519
+        ],
+        "median_rank_ms": 0.006375019438564777
+      },
+      "logistic": {
+        "cases": 864,
+        "top1": 0.7245370370370371,
+        "top3": 0.9039351851851852,
+        "mrr": 0.821224647266314,
+        "top1_topology_bootstrap_95pct": [
+          0.6863425925925926,
+          0.7604166666666666
+        ],
+        "median_rank_ms": 0.16135454643517733
+      },
+      "bayes": {
+        "cases": 864,
+        "top1": 0.7233796296296297,
+        "top3": 0.9120370370370371,
+        "mrr": 0.8230814806335639,
+        "top1_topology_bootstrap_95pct": [
+          0.6840277777777778,
+          0.7581018518518519
+        ],
+        "median_rank_ms": 0.026833033189177513,
+        "nll": 0.7660024067736965,
+        "brier_sum": 0.35737332146053824,
+        "ece_10_equal_width": 0.025328591593130993,
+        "coverage_at_0_9": 0.40162037037037035,
+        "accepted_error_rate": 0.025936599423631124,
+        "reliability_bins": [
+          {
+            "count": 3,
+            "mean_probability": 0.17901390807794726,
+            "accuracy": 0.3333333333333333
+          },
+          {
+            "count": 36,
+            "mean_probability": 0.26906260594342996,
+            "accuracy": 0.3611111111111111
+          },
+          {
+            "count": 109,
+            "mean_probability": 0.35151511758063225,
+            "accuracy": 0.3486238532110092
+          },
+          {
+            "count": 120,
+            "mean_probability": 0.45093320187097874,
+            "accuracy": 0.4166666666666667
+          },
+          {
+            "count": 43,
+            "mean_probability": 0.5489705887912113,
+            "accuracy": 0.4883720930232558
+          },
+          {
+            "count": 23,
+            "mean_probability": 0.6674005873994592,
+            "accuracy": 0.6521739130434783
+          },
+          {
+            "count": 65,
+            "mean_probability": 0.759764687664374,
+            "accuracy": 0.8153846153846154
+          },
+          {
+            "count": 118,
+            "mean_probability": 0.8499760514447424,
+            "accuracy": 0.8135593220338984
+          },
+          {
+            "count": 347,
+            "mean_probability": 0.9821661338136922,
+            "accuracy": 0.9740634005763689
+          }
+        ]
+      }
+    },
+    "noise_shift": {
+      "failed_path_votes": {
+        "cases": 864,
+        "top1": 0.24421296296296297,
+        "top3": 0.5069444444444444,
+        "mrr": 0.43014245613252317,
+        "top1_topology_bootstrap_95pct": [
+          0.21296296296296297,
+          0.27662037037037035
+        ],
+        "median_rank_ms": 0.006708083674311638
+      },
+      "logistic": {
+        "cases": 864,
+        "top1": 0.3773148148148148,
+        "top3": 0.6759259259259259,
+        "mrr": 0.5648503062463438,
+        "top1_topology_bootstrap_95pct": [
+          0.3368055555555556,
+          0.41435185185185186
+        ],
+        "median_rank_ms": 0.15095795970410109
+      },
+      "bayes": {
+        "cases": 864,
+        "top1": 0.3715277777777778,
+        "top3": 0.6840277777777778,
+        "mrr": 0.5621469749839848,
+        "top1_topology_bootstrap_95pct": [
+          0.3287037037037037,
+          0.41087962962962965
+        ],
+        "median_rank_ms": 0.026708003133535385,
+        "nll": 2.3913770511206747,
+        "brier_sum": 0.8556344299130197,
+        "ece_10_equal_width": 0.2833834552074468,
+        "coverage_at_0_9": 0.25462962962962965,
+        "accepted_error_rate": 0.38181818181818183,
+        "reliability_bins": [
+          {
+            "count": 7,
+            "mean_probability": 0.17941164144738078,
+            "accuracy": 0.14285714285714285
+          },
+          {
+            "count": 70,
+            "mean_probability": 0.259581062346009,
+            "accuracy": 0.14285714285714285
+          },
+          {
+            "count": 118,
+            "mean_probability": 0.3522377600221586,
+            "accuracy": 0.19491525423728814
+          },
+          {
+            "count": 138,
+            "mean_probability": 0.4492604959246842,
+            "accuracy": 0.2608695652173913
+          },
+          {
+            "count": 44,
+            "mean_probability": 0.5535300699639915,
+            "accuracy": 0.22727272727272727
+          },
+          {
+            "count": 60,
+            "mean_probability": 0.6574428313454385,
+            "accuracy": 0.45
+          },
+          {
+            "count": 99,
+            "mean_probability": 0.7562788504161545,
+            "accuracy": 0.3333333333333333
+          },
+          {
+            "count": 108,
+            "mean_probability": 0.8505739108138323,
+            "accuracy": 0.4166666666666667
+          },
+          {
+            "count": 220,
+            "mean_probability": 0.9650875627564793,
+            "accuracy": 0.6181818181818182
+          }
+        ]
+      }
+    },
+    "missing_55pct": {
+      "failed_path_votes": {
+        "cases": 864,
+        "top1": 0.40625,
+        "top3": 0.6064814814814815,
+        "mrr": 0.5435680511228219,
+        "top1_topology_bootstrap_95pct": [
+          0.36921296296296297,
+          0.4363425925925926
+        ],
+        "median_rank_ms": 0.005459063686430454
+      },
+      "logistic": {
+        "cases": 864,
+        "top1": 0.4930555555555556,
+        "top3": 0.7199074074074074,
+        "mrr": 0.6394946750364439,
+        "top1_topology_bootstrap_95pct": [
+          0.4583333333333333,
+          0.5300925925925926
+        ],
+        "median_rank_ms": 0.13716693501919508
+      },
+      "bayes": {
+        "cases": 864,
+        "top1": 0.4965277777777778,
+        "top3": 0.7256944444444444,
+        "mrr": 0.6431603112490571,
+        "top1_topology_bootstrap_95pct": [
+          0.4618055555555556,
+          0.5324074074074074
+        ],
+        "median_rank_ms": 0.01852051354944706,
+        "nll": 1.4256583406932979,
+        "brier_sum": 0.6005355207798211,
+        "ece_10_equal_width": 0.02182522048012787,
+        "coverage_at_0_9": 0.15393518518518517,
+        "accepted_error_rate": 0.045112781954887216,
+        "reliability_bins": [
+          {
+            "count": 75,
+            "mean_probability": 0.1792269491468917,
+            "accuracy": 0.22666666666666666
+          },
+          {
+            "count": 267,
+            "mean_probability": 0.2507839345340964,
+            "accuracy": 0.2546816479400749
+          },
+          {
+            "count": 101,
+            "mean_probability": 0.3435208537955802,
+            "accuracy": 0.3465346534653465
+          },
+          {
+            "count": 123,
+            "mean_probability": 0.44073971267544093,
+            "accuracy": 0.4634146341463415
+          },
+          {
+            "count": 11,
+            "mean_probability": 0.5399443423520808,
+            "accuracy": 0.2727272727272727
+          },
+          {
+            "count": 35,
+            "mean_probability": 0.669903535691382,
+            "accuracy": 0.8
+          },
+          {
+            "count": 63,
+            "mean_probability": 0.7543318453355233,
+            "accuracy": 0.7301587301587301
+          },
+          {
+            "count": 56,
+            "mean_probability": 0.8485866229855266,
+            "accuracy": 0.8571428571428571
+          },
+          {
+            "count": 133,
+            "mean_probability": 0.9674443135959468,
+            "accuracy": 0.9548872180451128
+          }
+        ]
+      }
+    },
+    "copied_alarms_x4": {
+      "failed_path_votes": {
+        "cases": 864,
+        "top1": 0.5659722222222222,
+        "top3": 0.7719907407407407,
+        "mrr": 0.6890309218939464,
+        "top1_topology_bootstrap_95pct": [
+          0.5277777777777778,
+          0.6018518518518519
+        ],
+        "median_rank_ms": 0.009167008101940155
+      },
+      "logistic": {
+        "cases": 864,
+        "top1": 0.7256944444444444,
+        "top3": 0.9074074074074074,
+        "mrr": 0.8226231812169312,
+        "top1_topology_bootstrap_95pct": [
+          0.6863425925925926,
+          0.7604166666666666
+        ],
+        "median_rank_ms": 0.25579152861610055
+      },
+      "bayes": {
+        "cases": 864,
+        "top1": 0.7210648148148148,
+        "top3": 0.9108796296296297,
+        "mrr": 0.821436308675892,
+        "top1_topology_bootstrap_95pct": [
+          0.6793981481481481,
+          0.7581018518518519
+        ],
+        "median_rank_ms": 0.07768702926114202,
+        "nll": 1.4838313720483922,
+        "brier_sum": 0.39576176673332103,
+        "ece_10_equal_width": 0.10850324358112014,
+        "coverage_at_0_9": 0.6770833333333334,
+        "accepted_error_rate": 0.1264957264957265,
+        "reliability_bins": [
+          {
+            "count": 15,
+            "mean_probability": 0.2714456677347572,
+            "accuracy": 0.4
+          },
+          {
+            "count": 79,
+            "mean_probability": 0.35850714550145013,
+            "accuracy": 0.3670886075949367
+          },
+          {
+            "count": 118,
+            "mean_probability": 0.4684559075645914,
+            "accuracy": 0.3813559322033898
+          },
+          {
+            "count": 40,
+            "mean_probability": 0.5465498187039837,
+            "accuracy": 0.475
+          },
+          {
+            "count": 21,
+            "mean_probability": 0.6434445349064157,
+            "accuracy": 0.47619047619047616
+          },
+          {
+            "count": 2,
+            "mean_probability": 0.7126090012116104,
+            "accuracy": 0.5
+          },
+          {
+            "count": 4,
+            "mean_probability": 0.8814228024456903,
+            "accuracy": 0.5
+          },
+          {
+            "count": 585,
+            "mean_probability": 0.9975000302200032,
+            "accuracy": 0.8735042735042735
+          }
+        ]
+      }
+    }
+  },
+  "active_probes": {
+    "information_gain": {
+      "0": {
+        "cases": 864,
+        "top1": 0.3136574074074074,
+        "top3": 0.5370370370370371,
+        "mrr": 0.48099654332293224
+      },
+      "1": {
+        "cases": 864,
+        "top1": 0.4224537037037037,
+        "top3": 0.6759259259259259,
+        "mrr": 0.5847717219576901
+      },
+      "2": {
+        "cases": 864,
+        "top1": 0.5370370370370371,
+        "top3": 0.7743055555555556,
+        "mrr": 0.6794192912963338
+      },
+      "3": {
+        "cases": 864,
+        "top1": 0.6516203703703703,
+        "top3": 0.8229166666666666,
+        "mrr": 0.7571771415955444
+      },
+      "4": {
+        "cases": 864,
+        "top1": 0.7245370370370371,
+        "top3": 0.8773148148148148,
+        "mrr": 0.8132191047121603
+      }
+    },
+    "random": {
+      "0": {
+        "cases": 864,
+        "top1": 0.3136574074074074,
+        "top3": 0.5370370370370371,
+        "mrr": 0.48099654332293224
+      },
+      "1": {
+        "cases": 864,
+        "top1": 0.3761574074074074,
+        "top3": 0.6180555555555556,
+        "mrr": 0.5427616830828637
+      },
+      "2": {
+        "cases": 864,
+        "top1": 0.4513888888888889,
+        "top3": 0.6840277777777778,
+        "mrr": 0.6056215148663066
+      },
+      "3": {
+        "cases": 864,
+        "top1": 0.5081018518518519,
+        "top3": 0.7280092592592593,
+        "mrr": 0.6519231507946786
+      },
+      "4": {
+        "cases": 864,
+        "top1": 0.5717592592592593,
+        "top3": 0.7719907407407407,
+        "mrr": 0.7000973611650695
+      }
+    }
+  },
+  "active_paired_topology_bootstrap": {
+    "additional_probe_budget": 4,
+    "samples": 1000,
+    "difference_top1": 0.1527777777777778,
+    "ci_95pct": [
+      0.11805555555555555,
+      0.18518518518518517
+    ],
+    "seed": 20261002
+  }
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netops-fault-lab"
+version = "0.1.0"
+description = "Rank network link faults from path probes and choose the next useful measurement."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "chrischen-coder"}]
+dependencies = []
+keywords = ["network", "fault-localization", "bayesian-inference", "active-diagnosis"]
+
+[project.optional-dependencies]
+bench = ["numpy>=1.26,<3", "scikit-learn>=1.5,<2", "networkx>=3.3,<4"]
+figures = ["matplotlib>=3.9,<4", "Pillow>=12.1.1,<13"]
+
+[project.scripts]
+netops-fault-lab = "netops_fault_lab.cli:main"
+
+[project.urls]
+Repository = "https://github.com/chrischen-coder/netops-fault-lab"
+Issues = "https://github.com/chrischen-coder/netops-fault-lab/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

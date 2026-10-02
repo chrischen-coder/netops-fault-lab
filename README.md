@@ -3,8 +3,7 @@
 Rank likely faulty links from path probes, then choose what to measure next.
 
 [![CI](https://github.com/chrischen-coder/netops-fault-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/chrischen-coder/netops-fault-lab/actions/workflows/ci.yml)
-[![[99_附件/00_通用附件/36e715135dfdb4ed5de7c5bec4e65231_MD5.svg]]](pyproject.toml)
-[![[99_附件/00_通用附件/59504e523ae8a6fe5f7b59d3284f8d39_MD5.svg]]](LICENSE)
+[Python 3.10+](pyproject.toml) · [MIT license](LICENSE)
 
 [简体中文](README.zh-CN.md) · [Method](docs/method.md) · [Experiments](docs/experiments.md) · [Input format](docs/input.md)
 
